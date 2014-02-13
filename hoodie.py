@@ -166,14 +166,14 @@ class AlmightyStallman(object):
             ionsOnTheRecipientsExerciseOfTheRightsGrantedHereinYouAreNotResponsibleForEnforcingComplianceByThirdPart iesTot  hisLicense7Ifa s   AConsequenceOfACourtJudgmentOrAllegationOfPatentinfringe        ''')
 
 
-TheSavior = AlmightyStallman()
+THE_SAVIOR = AlmightyStallman()
  
 class Student(object):
  
     def __init__(self, name, matric_number, course):
         self.money = 0
     def __init__(self, name, matric_number):
-        TheSavior.impart_wisdom()
+        THE_SAVIOR.impart_wisdom()
         self.at_university = True
         self.member_societies = {}
         self.graduated = False
