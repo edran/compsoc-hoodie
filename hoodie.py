@@ -33,7 +33,7 @@ class Student(object):
         yield None
  
     def join_society(self, society):
-        self.member_societies['comp_soc'] = society
+        self.member_societies[society.name] = society
         society.add_member(self.name, self.matric_number)
  
     def have_fun(self):
