@@ -2,7 +2,12 @@
  
 from __future__ import braces
 
- 
+class Course(object):
+
+    def __init__(self, name):
+        self.name = name
+        self.cost = float("inf")
+
 class ExamBoard(object):
 	
     def submit(self, work):
@@ -22,12 +27,14 @@ class Society(object):
  
 class Student(object):
  
-    def __init__(self, name, matric_number):
+    def __init__(self, name, matric_number, course):
+        self.money = 0
         self.at_university = True
         self.member_societies = {}
         self.graduated = False
         self.name = name
         self.matric_number = matric_number
+        self.course = course
         
     def fucks_given(self):
         yield None
@@ -50,12 +57,21 @@ class Student(object):
     def graduate(self):
         self.graduated = True
         self.member_societies = {}
+        if not drunk:
+            ceremony
+    def __init__(self):
+        self.cost = float("inf")
+    
+    def grad_ceremony(self):
+        if self.money > course.cost:
+            print "Many beers!"
+            return 1
  
  
 def main():
     comp_soc = Society('comp_soc')
  
-    student = Student('Jacob Essex', 's104340')
+    student = Student('Jacob Essex', 's104340', "AI&CS")
     student.join_society(comp_soc)
     
     board_of_examiners = ExamBoard()
@@ -64,6 +80,9 @@ def main():
         success = board_of_examiners.submit(student.do_work() for fucks in student.fucks_given())
         if not success:
             student.have_fun()
+    
+    if not student.drunk and student.graduated:
+        student.grad_ceremony()
  
 if __name__ == '__main__':
     main()
