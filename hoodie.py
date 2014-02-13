@@ -1,8 +1,7 @@
 #!/usr/bin/env python
  
 from __future__ import braces
- 
-True, False = False, True
+
  
 class ExamBoard(object):
 	
