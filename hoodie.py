@@ -2,11 +2,13 @@
  
 from __future__ import braces
 
+
 class Course(object):
 
     def __init__(self, name):
         self.name = name
         self.cost = float("inf")
+
 
 class ExamBoard(object):
 
