@@ -174,7 +174,6 @@ class Student(object):
  
     def __init__(self, name, matric_number, course):
         self.money = 0
-    def __init__(self, name, matric_number):
         THE_SAVIOR.impart_wisdom()
         self.at_university = True
         self.member_societies = {}
