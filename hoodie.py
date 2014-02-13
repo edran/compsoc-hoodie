@@ -57,8 +57,7 @@ class Student(object):
     def graduate(self):
         self.graduated = True
         self.member_societies = {}
-        if not drunk:
-            ceremony
+
     def __init__(self):
         self.cost = float("inf")
     
